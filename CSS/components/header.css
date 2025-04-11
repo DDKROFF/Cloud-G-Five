@@ -1,0 +1,27 @@
+.header__top {
+    display: flex;
+    background-color: var(--doblue);
+    color: white;
+    justify-content: space-between;
+    padding: 12px 40px;
+    align-items: center;
+}
+
+.navigation {
+    margin: 0 auto;
+    background-color: var(--doblue);
+    max-width: 1200px;
+    padding: 18px 115px;
+    border-radius: 0 0 30px 30px;
+    border-top: 3px solid gray;
+}
+
+.nav__bar {
+    display: flex;
+    gap: 100px;
+}
+
+.slider {
+    display: flex;
+    margin: 45px;
+}

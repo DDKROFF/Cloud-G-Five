@@ -1,0 +1,30 @@
+.html {
+    overflow-x: hidden;
+}
+
+.body {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-family: var(--tektur);
+    font-size: 20px;
+    color: white;
+}
+
+.container {
+    max-width: 1484px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.indent {
+    margin-bottom: 200px;
+}
+
+.six {
+    margin-top: 60px;
+}
+
+.h2 {
+    font-size: 40px;
+    text-align: center;
+}

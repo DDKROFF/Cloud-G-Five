@@ -1,0 +1,27 @@
+.login {
+    display: flex;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 18px;
+    align-items: center;
+    padding: 4px 30px;
+    font-size: 32px;
+}
+
+.loginSvg {
+    margin-left: 10px;
+}
+
+.nav__link {
+    font-size: 20px;
+    color: var(--blue);
+    transition: color .4s;
+}
+
+.nav__link:hover {
+    color: var(--lagune);
+}
+
+.nav__link:active {
+    color: var(--orange);
+}
