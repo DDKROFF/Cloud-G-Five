@@ -1,0 +1,142 @@
+.tariff__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.tariff__card {
+    position: relative;
+    width: 333px;
+    height: 540px;
+    border-radius: 60px;
+    background: linear-gradient(30deg, #366EE7 0%, #36D1EC 23%, #92FF33 49%, #45FF7D 69%, #3700FF 100%);
+    z-index: 0;
+    transition: 0.3s ease;
+}
+
+.tariff__card:hover {
+    transform: scale(1.06);
+}
+
+.background__card {
+    top: 7px;
+    right: -7px;
+    position: relative;
+    background-color: #0A0F1B;
+    border-radius: 52px;
+    width: 319px;
+    height: 526px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.background__text {
+    bottom: 146px;
+    left: -24%;
+    position: relative;
+    font-weight: 700;
+    font-size: 64px;
+    color: rgba(114, 82, 255, 0.08);
+    line-height: 140%;
+    letter-spacing: 0.3em;
+    transform: rotate(330deg);
+    z-index: 2;
+    width: 600px;
+    pointer-events: none;
+}
+
+/*Карта 1*/
+
+#card__one {
+    background: linear-gradient(30deg, #366EE7 0%, #36D1EC 23%, #92FF33 49%, #45FF7D 69%, #3700FF 100%);
+}
+
+#card__one:hover {
+    transform: scale(1.06);
+}
+
+#card__one:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 333px;
+    height: 540px;
+    border-radius: 60px;
+    background: linear-gradient(133deg, #366EE7 0%, #36D1EC 23%, #92FF33 49%, #45FF7D 69%, #3700FF 100%);
+    opacity: 0;
+    transition: 1s;
+}
+
+#card__one:hover:before {
+    opacity: 1;
+}
+
+/*Карта 2*/
+
+#card__two {
+    background: linear-gradient(30deg, #366EE7 0%, #E336EC 23%, #C63CF4 41%, #FC45FF 67%, #3700FF 100%);
+}
+
+#card__two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 333px;
+    height: 540px;
+    border-radius: 60px;
+    background: linear-gradient(133deg, #366EE7 0%, #E336EC 23%, #C63CF4 41%, #FC45FF 67%, #3700FF 100%);
+    opacity: 0;
+    transition: 1s;
+}
+
+#card__two:hover:before {
+    opacity: 1;
+}
+
+
+.tarrif__content {
+    display: flex;
+    position: relative;
+    left: 7px;
+    bottom: 519px;
+    max-width: 319px;
+    height: 526px;
+    flex-direction: column;
+    z-index: 3;
+    -webkit-text-stroke: 1px #61803C;
+}
+
+.tariff__title {
+    margin: 17px auto 0 22px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.play__time {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.play__hours {
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.play__price {
+    margin: auto auto 30px 20px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+#tarrif__text2{
+    -webkit-text-stroke: 1px #002fff;
+}
