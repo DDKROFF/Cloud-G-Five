@@ -8,4 +8,5 @@
 @import 'components/gradientCard.css';
 @import 'components/footer.css';
 
-@import 'home/home.css';
+@import 'pages/home.css';
+@import 'pages/aboutUs.css';
