@@ -98,6 +98,53 @@
     opacity: 1;
 }
 
+/*Карта 3*/
+
+#card__three {
+    background: linear-gradient(40deg, #AF8C2A 0%, #5F3206 100%);
+}
+
+#card__three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 333px;
+    height: 540px;
+    border-radius: 60px;
+    background: linear-gradient(227deg, #AF8C2A 0%, #5F3206 100%);
+    opacity: 0;
+    transition: 1s;
+}
+
+#card__three:hover:before {
+    opacity: 1;
+}
+
+/*Карта 4*/
+
+#card__four {
+    background: linear-gradient(35deg, #0051ff 0%, #1b007d 70%);
+}
+
+#card__four::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 333px;
+    height: 540px;
+    border-radius: 60px;
+    background: linear-gradient(211deg, #0051ff 0%, #1b007d 70%);
+    opacity: 0;
+    transition: 1s;
+}
+
+#card__four:hover:before {
+    opacity: 1;
+}
+
+/*Внутренний контент карт*/
 
 .tarrif__content {
     display: flex;
@@ -108,7 +155,6 @@
     height: 526px;
     flex-direction: column;
     z-index: 3;
-    -webkit-text-stroke: 1px #61803C;
 }
 
 .tariff__title {
@@ -136,7 +182,18 @@
     font-size: 40px;
 }
 
+#tarrif__text1:hover{
+    -webkit-text-stroke: 0.5px #61803C;
+}
 
-#tarrif__text2{
-    -webkit-text-stroke: 1px #002fff;
+#tarrif__text2:hover{
+    -webkit-text-stroke: 0.5px #7B0082;
+}
+
+#tarrif__text3:hover{
+    -webkit-text-stroke: 0.5px #8E752E;
+}
+
+#tarrif__text4:hover{
+    -webkit-text-stroke: 0.5px #366EE7;
 }
