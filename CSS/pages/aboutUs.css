@@ -1,9 +1,10 @@
 .description {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.h_desc {
+.h__desc {
     text-align: center;
     font-size: 48px;
     font-weight: 700;
@@ -16,4 +17,15 @@
     line-height: 164%;
     text-align: center;
     max-width: 1200px;
+}
+
+.serv__h {
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    margin: 150px 0 60px 0;
+}
+
+.swiper {
+    max-width: 722px;
 }

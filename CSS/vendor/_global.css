@@ -1,6 +1,17 @@
+::selection {
+    background: var(--doblue);
+    color: var(--lagune);
+}
+
+::-moz-selection {
+    background: var(--doblue);
+    color: var(--lagune);
+}
+
 .html {
     overflow-x: hidden;
     overflow-y: scroll;
+
 }
 
 .body {
