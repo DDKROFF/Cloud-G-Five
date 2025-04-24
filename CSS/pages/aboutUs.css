@@ -55,7 +55,14 @@
 
 /* Оценка */
 
+.from__comment {
+    max-width: 470px;
+    margin: 70px 0 0 0;
+    padding: 0 0 60px 60px;
+}
+
 .rating {
+    margin: 0 0 30px 60px;
     display: inline-block;
     user-select: none;
 }
@@ -83,30 +90,44 @@
 
 
 .input-container {
-    width: 300px;
-    margin: 20px auto;
-  }
-  
-  .input-label {
+    max-width: 340px;
+}
+
+.input-label {
     display: block;
     margin: 0 auto 10px 25px;
     font-weight: 400;
-    
-  }
-  
-  .input-field {
+
+}
+
+.input-field {
     width: 100%;
     padding: 10px 12px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
+    font-size: 20px;
+    border: 2px solid var(--blue);
+    border-radius: 18px;
     outline: none;
     transition: border-color 0.3s ease;
     box-sizing: border-box;
     color: white;
-  }
-  
-  .input-field:focus {
+}
+
+.input-field:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
+}
+
+.like__img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.rate__send {
+    left: 178px;
+    bottom: 52px;
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    -webkit-text-stroke: 2px var(--blue);
+    z-index: 1;
+}
