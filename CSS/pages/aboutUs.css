@@ -29,3 +29,84 @@
 .swiper {
     max-width: 722px;
 }
+
+.feedback {
+    margin: 200px 0 0 0;
+}
+
+.feedback__h {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.feedback__comment {
+    margin-top: 60px;
+    background-color: var(--doblue);
+    border-radius: 40px;
+}
+
+.head__text {
+    padding-top: 23px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Оценка */
+
+.rating {
+    display: inline-block;
+    user-select: none;
+}
+
+.star {
+    color: transparent;
+    -webkit-text-stroke: 1px #FFE101;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.star.hover,
+.star.selected {
+    color: #ffdd00;
+    text-shadow:
+        0 0 5px #ffdd00,
+        0 0 10px #ffdd00,
+        0 0 20px #ffdd00,
+        0 0 30px #ffae00,
+        0 0 40px #ffae00,
+        0 0 50px #ffae00,
+        0 0 60px #ffae00;
+}
+
+
+
+.input-container {
+    width: 300px;
+    margin: 20px auto;
+  }
+  
+  .input-label {
+    display: block;
+    margin: 0 auto 10px 25px;
+    font-weight: 400;
+    
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    color: white;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
