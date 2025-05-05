@@ -177,6 +177,13 @@
     font-size: 64px;
 }
 
+.tariff__subtitle {
+    max-width: 185px;
+    font-size: 19px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
 .play__price {
     margin: auto auto 30px 20px;
     font-weight: 600;
