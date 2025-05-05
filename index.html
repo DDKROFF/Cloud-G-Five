@@ -26,19 +26,19 @@
         <div class="navigation">
             <ul class="nav__bar">
                 <li class="nav__link">
-                    <a href="index.html">Главная</a>
+                    <a href="#header">Главная</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#">Игры</a>
+                    <a href="#games">Игры</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#">Тарифы</a>
+                    <a href="#tariffs">Тарифы</a>
                 </li>
                 <li class="nav__link">
                     <a href="aboutUs.html">О нас</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#">Акции</a>
+                    <a href="#share">Акции</a>
                 </li>
                 <li class="nav__link">
                     <a href="#">Наши клубы</a>
@@ -57,6 +57,7 @@
 
     <!-- Главная -->
 
+    <button id="to__header"><img src="images/UpArrow.svg"></button>
     <section class="first container indent">
         <div class="six indent">
             <div class="face">
@@ -118,7 +119,7 @@
     </section>
     <section class="second container indent">
         <div class="six indent">
-            <h2 class="h2" style="padding-bottom: 70px;">Популярные игры</h2>
+            <h2 class="h2" style="padding-bottom: 70px;" id="games">Популярные игры</h2>
             <ul class="games__list">
                 <li class="game"><img src="images/image 3.png"></li>
                 <li class="game"><img src="images/image 7.png"></li>
@@ -138,7 +139,7 @@
             </ul>
         </div>
         <div class="tariffs indent">
-            <h2 class="h2" style="padding-bottom: 60px;">Наши тарифы</h2>
+            <h2 class="h2" style="padding-bottom: 60px;" id="tariffs">Наши тарифы</h2>
             <ul class="tariff__list">
                 <li class="tariff__card" id="card__one">
                     <div class="background__card">
@@ -162,7 +163,7 @@
                         <p class="tariff__title">Тариф: Hour</p>
                         <p class="play__time">Игровое время</p>
                         <P class="play__hours">1 час</P>
-                        <p class="tariff__subtitle">Популярный тариф для того что бы немного поиграть</p>
+                        <p class="tariff__subtitle">Популярный тариф для того чтобы немного поиграть</p>
                         <p class="play__price">Цена: 60руб</p>
                     </div>
                 </li>
@@ -195,7 +196,7 @@
             </ul>
         </div>
         <div class="share">
-            <h2 class="h2 six">Акции</h2>
+            <h2 class="h2 six" id="share">Акции</h2>
             <ul class="share__list six">
                 <li class="share__card">
                     <p>При регистрации<br><br></p>
@@ -212,10 +213,13 @@
             </ul>
         </div>
     </section>
-    <footer class="footer">
+
+    <script src="js/global.js"></script>
+
+    <footer class="footer" id="footer">
         <div class="developer">
             <p class="footer__dev">Верстка и дизайн<br><span style="color: var(--blue);">КРЮЧКОВ Д.Ф.</span></p>
-            <p class="footer__rate">ОЦЕНИТЕ НАС</p>
+            <a class="rate__link" href="aboutUs.html#feedback"><p class="footer__rate">ОЦЕНИТЕ НАС</p></a>
         </div>
         <a><h3 class="report">Отчет</h3></a>
         <div class="contacts">

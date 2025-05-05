@@ -1,5 +1,6 @@
 .header {
     user-select: none;
+    font-display: swap 
 }
 
 .header__top {

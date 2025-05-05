@@ -1,21 +1,21 @@
 const swiper = new Swiper('.swiper', {
 
-    loop: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  loop: true,
 
-  new Swiper('.swiper', {
-    Loop: true,
-    slidesPerView: 1,
-    spaceBetween: 0
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+new Swiper('.swiper', {
+  Loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0
 });
 
 window.addEventListener('orientationchange', () => {
@@ -54,18 +54,3 @@ function highlightStars(rating) {
     }
   });
 }
-
-//Все что связанно с якорными ссылками//
-
-window.addEventListener('load', () => {
-  const hash = window.location.hash;
-  if (hash) {
-    const target = document.querySelector(hash);
-    if (target) {
-      //Задержка
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  }
-});

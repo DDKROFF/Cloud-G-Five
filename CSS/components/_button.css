@@ -6,6 +6,7 @@
     align-items: center;
     padding: 4px 30px;
     font-size: 32px;
+    min-width: 183.7px;
 }
 
 .loginSvg {
@@ -23,5 +24,25 @@
 }
 
 .nav__link:active {
+    color: var(--orange);
+}
+
+#to__header {
+    top: 89%;
+    left: 95%;
+    position: fixed;
+    z-index: 10;
+    transition: bottom 0.3s ease;
+}
+
+.rate__link {
+    transition: 0.4s;
+}
+
+.rate__link:hover {
+    color: var(--lagune);
+}
+
+.rate__link:active {
     color: var(--orange);
 }

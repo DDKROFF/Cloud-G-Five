@@ -10,13 +10,14 @@
     <title>Cloud G Five</title>
     <link rel="shortcut icon" href="images/icons/Logo.svg">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body class="body">
 
     <!--Шапка-->
-
+    
+    <button id="to__header"><img src="images/UpArrow.svg"></button>
     <header class="header" id="header">
         <div class="header__top"><img class="logo" src="images/icons/Logo.svg">
             <img class="siteName" src="images/icons/Site Name 3d.svg">
@@ -30,7 +31,7 @@
                     <a href="index.html">Главная</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#">Игры</a>
+                    <a href="index.html#games">Игры</a>
                 </li>
                 <li class="nav__link">
                     <a href="#">Тарифы</a>
@@ -103,7 +104,7 @@
             <div class="swiper-button-next"></div>
         </div>
 
-        <div class="feedback">
+        <div class="feedback" id="feedback">
             <h3 class="feedback__h">Оставьте отзыв</h3>
             <div class="feedback__comment">
                 <p class="head__text">Вы можете оценить нас или же подать жалобу для улучшения наших услуг</p>
@@ -129,11 +130,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/global.js"></script>
 
     <footer class="footer">
         <div class="developer">
             <p class="footer__dev">Верстка и дизайн<br><span style="color: var(--blue);">КРЮЧКОВ Д.Ф.</span></p>
-            <p class="footer__rate">ОЦЕНИТЕ НАС</p>
+            <a class="rate__link" href="aboutUs.html#feedback"><p class="footer__rate">ОЦЕНИТЕ НАС</p></a>
         </div>
         <a>
             <h3 class="report">Отчет</h3>

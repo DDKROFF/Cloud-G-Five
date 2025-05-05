@@ -42,3 +42,10 @@
     font-size: 40px;
     text-align: center;
 }
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
