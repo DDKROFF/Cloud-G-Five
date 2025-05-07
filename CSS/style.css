@@ -4,6 +4,7 @@
 @import 'vendor/_fonts.css';
 
 @import 'components/_header.css';
+@import 'components/_slider.css';
 @import 'components/_button.css';
 @import 'components/_gradientCard.css';
 @import 'components/_footer.css';
