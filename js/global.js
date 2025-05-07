@@ -2,6 +2,7 @@
 
 document.querySelectorAll('img').forEach(img => {
     img.setAttribute('draggable', 'false');
+    img.setAttribute('loading', 'lazy');
 });
 
 //Все что связанно с якорными ссылками//

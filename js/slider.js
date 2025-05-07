@@ -1,34 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.slider');
-    let slides = container.querySelectorAll('img.slide');
-    if (slides.length === 0) return;
-  
-    // Получаем ширину слайда с отступом
-    const slideStyle = getComputedStyle(slides[0]);
-    const slideWidth = slides[0].offsetWidth + parseInt(slideStyle.marginRight);
-  
-    let scrollPosition = 0;
-  
-    function slideNext() {
-      scrollPosition += slideWidth;
-      container.scrollTo({ left: scrollPosition, behavior: 'smooth' });
-  
-      // Обновляем NodeList, т.к. он статичен
-      slides = container.querySelectorAll('img.slide');
-  
-      if (scrollPosition >= slideWidth * (slides.length - 1)) {
-        const firstSlide = slides[0];
-        const clone = firstSlide.cloneNode(true);
-        container.appendChild(clone);
-  
-        // Ждем завершения плавного скролла
-        setTimeout(() => {
-          scrollPosition -= slideWidth;
-          container.scrollLeft = scrollPosition;
-          container.removeChild(firstSlide);
-        }, 500);
-      }
+  const slider = document.querySelector('.slider');
+  const container = document.querySelector('.slider__container');
+  const slideWidth = 342.33;
+  let offset = 0;
+  const speed = 0.7;
+  const slides = slider.querySelectorAll('a');
+  for (let i = 0; i < 2; i++) {
+    const clone = slides[i].cloneNode(true);
+    slider.appendChild(clone);
+  }
+
+  function animate() {
+    offset += speed;
+
+    if (offset >= slideWidth) {
+      offset -= slideWidth;
+      const firstSlide = slider.querySelector('a');
+      slider.appendChild(firstSlide);
     }
-  
-    setInterval(slideNext, 3000);
-  });
+
+    slider.style.transform = `translateX(${-offset}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  //Для адаптивности слайдера
+  function updateContainerWidth() {
+    const maxWidth = 1830;
+    const sidePadding = 80;
+    const availableWidth = Math.min(window.innerWidth, maxWidth + sidePadding) - sidePadding;
+    container.style.maxWidth = `${availableWidth}px`;
+  }
+
+  window.addEventListener('resize', updateContainerWidth);
+  updateContainerWidth();
+
+  animate();
+});
