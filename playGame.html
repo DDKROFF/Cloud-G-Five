@@ -28,19 +28,19 @@
         <div class="navigation">
             <ul class="nav__bar">
                 <li class="nav__link">
-                    <a href="#header">Главная</a>
+                    <a href="index.html">Главная</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#games">Игры</a>
+                    <a href="index.html#games">Игры</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#tariffs">Тарифы</a>
+                    <a href="index.html#tariffs">Тарифы</a>
                 </li>
                 <li class="nav__link">
                     <a href="aboutUs.html">О нас</a>
                 </li>
                 <li class="nav__link">
-                    <a href="#share">Акции</a>
+                    <a href="index.html#share">Акции</a>
                 </li>
                 <li class="nav__link">
                     <a href="ourClubs.html">Наши клубы</a>
@@ -67,73 +67,23 @@
             </div>
         </div>
     </header>
-
-    <!-- Главная -->
-
     <main>
         <button id="to__header"><img src="images/UpArrow.svg"></button>
-        <section class="first container indent">
-            <div class="six indent">
-                <div class="face">
-                    <img class="logo3D" src="images/3dLogo.gif" alt="gif">
-                    <div>
-                        <h1 class="face__h">Cloud G Five</h1>
-                        <p class="face__text">Cайт облачного гейминга, где вы можете
-                            наслаждаться самыми новыми и
-                            требовательными видеоиграми без
-                            необходимости в дорогом оборудовании. </p>
-                    </div>
+        <section class="container indent">
+            <div class="game__paly__bar">
+                <img class="game__img" src="images/image2.webp">
+                <div class="game__play">
+                    <h1 class="game__name">RUST</h1>
+                    <button class="play__btn">Начать сессию</button>
+                    <p class="game__subtitle">
+                        Нажмите чтоб начать игровую сессию. Тарифное время начинает отчет через 5мин после подключения к серверу
+                    </p>
+                    <p class="game__rating">8.5/10</p>
                 </div>
             </div>
-            <div class="how__work">
-                <h2 class="h2">Как это работает?</h2>
-                <ul class="ul__howWork">
-                    <li>
-                        <p>Запуск игр на удаленном сервере: Мы используем мощные сервера с топовыми
-                            видеокартами, чтобы обеспечить высокое качество графики и плавную игру.
-                        </p>
-                    </li>
-                    <li>
-                        <p>Потоковая передача: Вы получаете видеопоток прямо на свое устройство, как
-                            при просмотре видео на YouTube.
-                        </p>
-                    </li>
-                    <li>
-                        <p>Управление игрой: Ваши команды (нажатия клавиш, движения мыши)
-                            отправляются на сервер, где обрабатываются в реальном времени.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="advantages indent">
-                <h2 class="h2">Преимущества</h2>
-                <ul class="advantages__list">
-                    <li class="advantages__card">
-                        <img src="images/icons/PC.svg" class="advantages__icon">
-                        <h3 class="list__h">Нет необходимости в дорогом оборудовании</h3>
-                        <p>Играйте в новые игры на<br>старых устройствах.</p>
-                    </li>
-                    <li class="advantages__card">
-                        <img src="images/icons/Formate.svg" class="advantages__icon">
-                        <h3 class="list__h">Доступность на<br>разных платформах</h3>
-                        <p>Поддержка Windows, macOS,<br>Android, iOS и других.</p>
-                    </li>
-                    <li class="advantages__card">
-                        <img src="images/icons/No Download.svg" class="advantages__icon">
-                        <h3 class="list__h">Не нужно<br>скачивать игры</h3>
-                        <p>Все игры хранятся на наших серверах,<br>экономя место на вашем устройстве</p>
-                    </li>
-                    <li class="advantages__card">
-                        <img src="images/icons/Рука.svg" class="advantages__icon">
-                        <h3 class="list__h">Большая<br>библиотека игр</h3>
-                        <p>Включает популярные тайтлы<br>и бесплатные игры</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="second container indent">
-            <div class="six indent">
-                <h2 class="h2" style="padding-bottom: 70px;" id="games">Популярные игры</h2>
+
+            <div class="indent">
+                <h2 class="h2" style="padding-bottom: 70px;" id="games">Еще игры</h2>
                 <ul class="games__list">
                     <li class="game"><a href="playGame.html"><img src="images/image3.webp"></a></li>
                     <li class="game"><a href="playGame.html"><img src="images/image7.webp"></a></li>
@@ -153,7 +103,7 @@
                 </ul>
             </div>
             <div class="tariffs indent">
-                <h2 class="h2" style="padding-bottom: 60px;" id="tariffs">Наши тарифы</h2>
+                <h2 class="h2" style="padding-bottom: 60px;" id="tariffs">Кончился тариф? Возьми еще</h2>
                 <ul class="tariff__list">
                     <li class="tariff__card" id="card__one">
                         <div class="background__card">
@@ -206,23 +156,6 @@
                             <p class="tariff__subtitle">Играйте всю ночь от 22:00 до 6:00</p>
                             <p class="play__price">Цена: 320руб</p>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="share">
-                <h2 class="h2 six" id="share">Акции</h2>
-                <ul class="share__list six">
-                    <li class="share__card">
-                        <p>При регистрации<br><br></p>
-                        <p class="p_share">получи 1 час игры на наших серверах бесплатно</p>
-                    </li>
-                    <li class="share__card">
-                        <p>При пополнении<br><br></p>
-                        <p class="p_share">кошелька в первый раз от часа получи еще 30 минут</p>
-                    </li>
-                    <li class="share__card">
-                        <p>При регистрации<br><br></p>
-                        <p class="p_share">мы добавим по 1 часу каждому за счет нашего сайта</p>
                     </li>
                 </ul>
             </div>

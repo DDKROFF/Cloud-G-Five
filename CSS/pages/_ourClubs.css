@@ -1,0 +1,42 @@
+.video {
+    width: 771px;
+    height: 382px;
+    background-color: var(--doblue);
+    margin: 80px auto 0;
+}
+
+.h1__ouc {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.subtitle__games__five {
+    max-width: 820px;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.h2__ouc {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    justify-content: center;
+    margin: 200px 0 60px 0;
+}
+
+.map-container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1400px) {
+    .map-container {
+      width: 100%;
+    }
+    .map {
+      width: 100%;
+      height: auto;
+    }
+  }
