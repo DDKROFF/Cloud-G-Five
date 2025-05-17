@@ -5,22 +5,27 @@
     font-weight: 700;
     box-sizing: border-box;
     justify-content: center;
+    align-items: center;
 }
 
 .game__img {
     display: block;
     width: 100%;
     max-width: 550px;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .game__name {
     font-size: 64px;
     line-height: 100%;
+    margin: 0;
 }
 
 .game__play {
     position: relative;
+    max-width: 500px;
 }
 
 .play__btn {
@@ -30,6 +35,13 @@
     padding: 19px 48px;
     border-radius: 16px;
     margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play__btn:hover {
+    background-color: #00a3a3;
 }
 
 .game__subtitle {
@@ -37,6 +49,7 @@
     color: var(--blue);
     font-size: 14px;
     margin-top: 25px;
+    line-height: 1.4;
 }
 
 .game__rating {
@@ -46,4 +59,83 @@
     color: var(--orange);
     bottom: 196px;
     left: 280px;
+}
+
+@media (max-width: 1024px) {
+    .game__paly__bar {
+        margin: 80px 0 150px 0;
+        gap: 40px;
+    }
+
+    .game__name {
+        font-size: 48px;
+    }
+
+    .play__btn {
+        font-size: 28px;
+        padding: 15px 36px;
+    }
+
+    .game__rating {
+        font-size: 20px;
+        bottom: 160px;
+        left: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game__paly__bar {
+        flex-direction: column;
+        margin: 60px 0 100px 0;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .game__img {
+        max-width: 100%;
+    }
+
+    .game__play {
+        text-align: center;
+    }
+
+    .game__name {
+        font-size: 36px;
+    }
+
+    .play__btn {
+        font-size: 24px;
+        padding: 12px 30px;
+    }
+
+    .game__subtitle {
+        max-width: 100%;
+        margin: 20px auto 0;
+    }
+
+    .game__rating {
+        position: static;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 480px) {
+    .game__paly__bar {
+        margin: 40px 0 80px 0;
+        gap: 20px;
+    }
+
+    .game__name {
+        font-size: 28px;
+    }
+
+    .play__btn {
+        font-size: 20px;
+        padding: 10px 24px;
+    }
+
+    .game__subtitle {
+        font-size: 12px;
+    }
 }
