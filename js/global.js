@@ -33,3 +33,75 @@ document.getElementById('to__header').addEventListener('click', function () {
         }, 500);
     }
 });
+
+// Модальное окно входа //
+
+const btn = document.getElementById ('modalOpen');
+const body = document.body;
+const modal = document.querySelector ('.modal__window');
+const modalCloseBtn = document.querySelector ('.modal__btn');
+
+btn.addEventListener ('click', function() {
+    body.classList.add ('active');
+    modal.classList.add ('active');
+});
+
+modalCloseBtn.addEventListener ('click', function() {
+    body.classList.remove ('active');
+    modal.classList.remove ('active');
+});
+
+document.addEventListener ('keydown', function(event) {
+    if (event.key === 'Escape') {
+    body.classList.remove ('active');
+    modal.classList.remove ('active');
+    modalReg.classList.remove ('active');
+    }
+})
+
+// Окно регистрации//
+
+const regBtn = document.getElementById ('reg-modal');
+const regModal = document.querySelector ('.reg__window');
+const closeBtn = document.querySelector ('.close__btn');
+const confirmReg = document.getElementById ('confirm-reg');
+
+regBtn.addEventListener ('click', function() {
+    modal.classList.remove ('active');
+    regModal.classList.add ('active');
+});
+
+closeBtn.addEventListener ('click', function() {
+    body.classList.remove ('active');
+    regModal.classList.remove ('active');
+});
+
+confirmReg.addEventListener ('click', function () {
+    body.classList.remove ('active');
+    regModal.classList.remove ('active');
+})
+
+// Отправка формы в никуда //
+
+const form = document.getElementById('myForm');
+
+  form.addEventListener('submit', async function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('/your-server-endpoint', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (!response.ok) throw new Error('Ошибка сети');
+      alert('Форма успешно отправлена!');
+
+      form.reset();
+
+    } catch (error) {
+      alert('Ошибка при отправке формы: ' + error.message);
+    }
+  });

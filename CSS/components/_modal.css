@@ -1,0 +1,151 @@
+.x__icon {
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    left: 751px;
+}
+
+.modal__window {
+    width: 821px;
+    background-color: var(--doblue);
+    border-radius: 40px;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transition: opacity .4s, visibility .4s;
+}
+
+.modal__window.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    display: flex;
+    padding: 55px 60px 60px 60px;
+    gap: 45px;
+}
+
+.login__input {
+    display: flex;
+    gap: 35px;
+    height: 355px;
+    flex-direction: column;
+}
+
+.modal__name {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+
+.modal__label {
+    margin: 0 auto 5px 16px;
+}
+
+.modal__field {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 20px;
+    border: 2px solid var(--blue);
+    border-radius: 18px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    color: white;
+}
+
+.modal__field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login__next {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 18px;
+    padding: 17px 30px;
+    font-weight: 500;
+    font-size: 24px;
+    margin: auto auto 0 0;
+}
+.login__social {
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    text-align: center;
+    justify-content: space-between;
+}
+.social__network {
+    max-width: 188px;
+    margin-left: auto;
+}
+
+.social__list {
+    display: flex;
+    gap: 20px 32px;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 21px 0 0 0;
+    padding-bottom: 23px;
+}
+
+.social__list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-bottom: 2px solid var(--blue);
+}
+
+.reg__modal {
+    background-color: var(--orange);
+    color: white;
+    border-radius: 18px;
+    padding: 17px 30px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.reg__modal {
+    margin-top: 10px;
+}
+
+/* Модальное окно регистрации*/
+
+
+.reg__window {
+    width: 821px;
+    background-color: var(--doblue);
+    border-radius: 40px;
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transition: opacity .4s, visibility .4s;
+}
+
+.reg__window.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal__input__reg {
+    display: flex;
+    gap: 5px;
+    height: 355px;
+    flex-direction: column;
+}

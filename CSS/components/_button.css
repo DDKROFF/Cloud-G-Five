@@ -6,7 +6,8 @@
     align-items: center;
     padding: 4px 30px;
     font-size: 32px;
-    min-width: 183.7px;
+    max-width: 183.7px;
+    gap: 3px;
 }
 
 .loginSvg {
@@ -31,7 +32,7 @@
     top: 89%;
     left: 95%;
     position: fixed;
-    z-index: 10;
+    z-index: 1;
     transition: bottom 0.3s ease;
 }
 

@@ -15,15 +15,94 @@
 
 <body class="body">
 
+    <!--Модальные окна входа и регис.-->
+
+    <div class="modal__window">
+        <button class="modal__btn" type="button"><img class="x__icon" src="images/icons/✕.svg"></button>
+        <h3 class="modal__name">Вход</h3>
+        <div class="modal">
+            <div class="login__input">
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Логин</label>
+                    <input type="text" id="user-login" class="modal__field" placeholder="Логин или почта...">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Пароль</label>
+                    <input type="password" id="user-password" class="modal__field" placeholder="Введите пароль...">
+                </div>
+                <button class="login__next" type="submit">Вход</button>
+            </div>
+            <div class="login__social">
+                <div class="social__network">
+                    <p>Войти с помощью</p>
+                    <ul class="social__list">
+                        <li><img src="images/icons/ВК.svg"></li>
+                        <li><img src="images/icons/ОК.svg"></li>
+                        <li><img src="images/icons/Телеграм.svg"></li>
+                        <li><img src="images/icons/Яндекс.svg"></li>
+                        <li><img src="images/icons/Гугл.svg"></li>
+                        <li><img src="images/icons/Стим.svg"></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Еще нет аккаунта?</p>
+                    <button class="reg__modal" type="submit" id="reg-modal">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reg__window">
+        <button class="close__btn" type="button"><img class="x__icon" src="images/icons/✕.svg"></button>
+        <h3 class="modal__name">Регистрация</h3>
+        <div class="modal">
+            <div class="login__input__reg">
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Логин</label>
+                    <input type="text" id="user-newLogin" class="modal__field" placeholder="Создайте себе логин...">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Почта</label>
+                    <input type="email" id="user-mail" class="modal__field" placeholder="Введите почту...">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Пароль</label>
+                    <input type="password" id="user-newPassword" class="modal__field" placeholder="Придумайте пароль...">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Пароль</label>
+                    <input type="password" id="user-newPasswordtwo" class="modal__field" placeholder="Повторите пароль...">
+                </div>
+            </div>
+            <div class="login__social">
+                <div class="social__network">
+                    <p>Войти с помощью</p>
+                    <ul class="social__list">
+                        <li><img src="images/icons/ВК.svg"></li>
+                        <li><img src="images/icons/ОК.svg"></li>
+                        <li><img src="images/icons/Телеграм.svg"></li>
+                        <li><img src="images/icons/Яндекс.svg"></li>
+                        <li><img src="images/icons/Гугл.svg"></li>
+                        <li><img src="images/icons/Стим.svg"></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Еще нет аккаунта?</p>
+                    <button class="reg__modal" type="submit" id="confirm-reg">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Шапка-->
 
     <button id="to__header"><img src="images/UpArrow.svg"></button>
+
     <header class="header" id="header">
         <div class="header__top"><img class="logo" src="images/icons/Logo.svg">
             <img class="siteName" src="images/icons/Site Name 3d.svg">
-            <button class="login">
-                <p>Войти</p><img class="loginSvg" src="images/icons/Vector 1.svg" width="14.5" height="22">
-            </button>
+            <button class="login" type="button" id="modalOpen">Войти<img src="images/icons/Vector 1.svg" width="14.5"
+                    height="22"></button>
         </div>
         <div class="navigation">
             <ul class="nav__bar">
@@ -67,10 +146,11 @@
             </div>
         </div>
     </header>
-
     <main>
         <section class="container indent">
-            <video class="video__banner" width="1400px" height="300px" loop muted autoplay><source src="images/banner.mp4" type="video/mp4"></video>
+            <video class="video__banner" width="1400px" height="300px" loop muted autoplay>
+                <source src="images/banner.mp4" type="video/mp4">
+            </video>
             <div class="description">
                 <h1 class="h__desc">Cloud G Five</h1>
                 <p class="description__text">Наш сайт предлагает уникальный опыт облачного гейминга, позволяя играть в
@@ -121,7 +201,7 @@
 
             <div class="feedback" id="feedback">
                 <h3 class="feedback__h">Оставьте отзыв</h3>
-                <div class="feedback__comment">
+                <form class="feedback__comment" id="myForm" action="/index.html" method="post">
                     <p class="head__text">Вы можете оценить нас или же подать жалобу для улучшения наших услуг</p>
                     <div class="input__for__rating">
                         <div class="from__comment">
@@ -137,7 +217,7 @@
                                 <input type="text" id="user-input" class="input-field"
                                     placeholder="Почта или телефон...">
                             </div>
-                            <button class="send__btn">
+                            <button class="send__btn" type="submit">
                                 <img class="like__img" src="images/like.png">
                             </button>
                         </div>
@@ -148,7 +228,7 @@
                                 placeholder="Здесь вы можете подробно все расписать..."></textarea>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
 
         </section>
