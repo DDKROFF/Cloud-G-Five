@@ -7,11 +7,13 @@
     padding: 4px 30px;
     font-size: 32px;
     max-width: 183.7px;
-    gap: 3px;
+    gap: 5px;
 }
 
-.loginSvg {
-    margin-left: 10px;
+.btn__icon {
+    max-height: 22px;
+    height: auto;
+    width: auto;
 }
 
 .nav__link {
@@ -32,7 +34,7 @@
     top: 89%;
     left: 95%;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     transition: bottom 0.3s ease;
 }
 
@@ -46,4 +48,66 @@
 
 .rate__link:active {
     color: var(--orange);
+}
+
+@media (max-width: 1500px) {
+    .login {
+        font-size: 28px;
+        padding: 4px 25px;
+    }
+    .nav__link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #to__header {
+        left: 93%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .login {
+        font-size: 24px;
+        padding: 2px 18px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .login {
+        font-size: 20px;
+        padding: 2px 14px;
+        border-radius: 14px;
+        
+    }
+    .nav__link {
+        font-size: 14px;
+    }
+    .btn__icon {
+        padding: 2px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .login {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    .login {
+        font-size: 14px;
+        padding: 1px 10px;
+        border-radius: 12px;
+    }
+    .btn__icon {
+        padding: 4px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav__link {
+        font-size: 12px;
+    }
 }

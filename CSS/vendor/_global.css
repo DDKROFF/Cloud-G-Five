@@ -30,7 +30,7 @@ body::before {
     visibility: hidden;
     transition: opacity .4s, visibility .4s;
     background-color: rgba(0, 0, 0, .4);
-    z-index: 2;
+    z-index: 3;
 }
 
 body.active {
@@ -73,3 +73,9 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
   }
+
+@media (max-width: 1024px) {
+    .six {
+        margin-top: 40px;
+    }
+}

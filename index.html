@@ -68,11 +68,13 @@
                 </div>
                 <div class="modal__input">
                     <label for="user-input" class="modal__label">Пароль</label>
-                    <input type="password" id="user-newPassword" class="modal__field" placeholder="Придумайте пароль...">
+                    <input type="password" id="user-newPassword" class="modal__field"
+                        placeholder="Придумайте пароль...">
                 </div>
                 <div class="modal__input">
                     <label for="user-input" class="modal__label">Пароль</label>
-                    <input type="password" id="user-newPasswordtwo" class="modal__field" placeholder="Повторите пароль...">
+                    <input type="password" id="user-newPasswordtwo" class="modal__field"
+                        placeholder="Повторите пароль...">
                 </div>
             </div>
             <div class="login__social">
@@ -98,10 +100,16 @@
     <!--Шапка-->
 
     <header class="header" id="header">
-        <div class="header__top"><img class="logo" src="images/icons/Logo.svg">
+        <div class="header__top">
+            <div class="menu-btn" type="button">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <img class="logo" src="images/icons/Logo.svg">
             <img class="siteName" src="images/icons/Site Name 3d.svg">
-            <button class="login" type="button" id="modalOpen">Войти<img src="images/icons/Vector 1.svg" width="14.5" height="22"></button>
+            <button class="login" type="button" id="modalOpen">Войти<img class="btn__icon"
+                    src="images/icons/Vector 1.svg"></button>
         </div>
+
         <div class="navigation">
             <ul class="nav__bar">
                 <li class="nav__link">
@@ -124,6 +132,28 @@
                 </li>
             </ul>
         </div>
+        <nav class="mobile__menu">
+            <ul class="menu__list">
+                <li class="nav__link mb">
+                    <a href="#header">Главная</a>
+                </li>
+                <li class="nav__link mb">
+                    <a href="#games">Игры</a>
+                </li>
+                <li class="nav__link mb">
+                    <a href="#tariffs">Тарифы</a>
+                </li>
+                <li class="nav__link mb">
+                    <a href="aboutUs.html">О нас</a>
+                </li>
+                <li class="nav__link mb">
+                    <a href="#share">Акции</a>
+                </li>
+                <li class="nav__link mb">
+                    <a href="ourClubs.html">Наши клубы</a>
+                </li>
+            </ul>
+        </nav>
         <div class="slider__container">
             <div class="slider">
                 <a class="slide" href="playGame.html"><img src="images/image1.webp" alt="slide 1"></a>
@@ -149,7 +179,7 @@
 
     <main>
         <button id="to__header"><img src="images/UpArrow.svg"></button>
-        <section class="first container indent">
+        <section class="container indent">
             <div class="six indent">
                 <div class="face">
                     <img class="logo3D" src="images/3dLogo.gif" alt="gif">

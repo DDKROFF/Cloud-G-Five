@@ -11,6 +11,9 @@ document.querySelectorAll('img').forEach(img => {
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        menuBtn.classList.remove('open');
+        mobilemenu.classList.remove('active');
+        body.classList.remove('active');
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -36,72 +39,58 @@ document.getElementById('to__header').addEventListener('click', function () {
 
 // Модальное окно входа //
 
-const btn = document.getElementById ('modalOpen');
+const btn = document.getElementById('modalOpen');
 const body = document.body;
-const modal = document.querySelector ('.modal__window');
-const modalCloseBtn = document.querySelector ('.modal__btn');
+const modal = document.querySelector('.modal__window');
+const modalCloseBtn = document.querySelector('.modal__btn');
 
-btn.addEventListener ('click', function() {
-    body.classList.add ('active');
-    modal.classList.add ('active');
+btn.addEventListener('click', function () {
+    body.classList.add('active');
+    modal.classList.add('active');
 });
 
-modalCloseBtn.addEventListener ('click', function() {
-    body.classList.remove ('active');
-    modal.classList.remove ('active');
+modalCloseBtn.addEventListener('click', function () {
+    body.classList.remove('active');
+    modal.classList.remove('active');
 });
 
-document.addEventListener ('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
-    body.classList.remove ('active');
-    modal.classList.remove ('active');
-    modalReg.classList.remove ('active');
+        body.classList.remove('active');
+        modal.classList.remove('active');
+        modalReg.classList.remove('active');
     }
 })
 
 // Окно регистрации//
 
-const regBtn = document.getElementById ('reg-modal');
-const regModal = document.querySelector ('.reg__window');
-const closeBtn = document.querySelector ('.close__btn');
-const confirmReg = document.getElementById ('confirm-reg');
+const regBtn = document.getElementById('reg-modal');
+const regModal = document.querySelector('.reg__window');
+const closeBtn = document.querySelector('.close__btn');
+const confirmReg = document.getElementById('confirm-reg');
 
-regBtn.addEventListener ('click', function() {
-    modal.classList.remove ('active');
-    regModal.classList.add ('active');
+regBtn.addEventListener('click', function () {
+    modal.classList.remove('active');
+    regModal.classList.add('active');
 });
 
-closeBtn.addEventListener ('click', function() {
-    body.classList.remove ('active');
-    regModal.classList.remove ('active');
+closeBtn.addEventListener('click', function () {
+    body.classList.remove('active');
+    regModal.classList.remove('active');
 });
 
-confirmReg.addEventListener ('click', function () {
-    body.classList.remove ('active');
-    regModal.classList.remove ('active');
+confirmReg.addEventListener('click', function () {
+    body.classList.remove('active');
+    regModal.classList.remove('active');
 })
 
-// Отправка формы в никуда //
+// Бургер меню //
 
-const form = document.getElementById('myForm');
+const menuBtn = document.querySelector('.menu-btn');
+const mobilemenu = document.querySelector('.mobile__menu');
 
-  form.addEventListener('submit', async function(event) {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch('/your-server-endpoint', {
-        method: 'POST',
-        body: formData
-      });
-
-      if (!response.ok) throw new Error('Ошибка сети');
-      alert('Форма успешно отправлена!');
-
-      form.reset();
-
-    } catch (error) {
-      alert('Ошибка при отправке формы: ' + error.message);
-    }
-  });
+menuBtn.addEventListener('click', function(){
+    menuBtn.classList.toggle('open');
+    mobilemenu.classList.toggle('active');
+    body.classList.toggle ('active');
+});
