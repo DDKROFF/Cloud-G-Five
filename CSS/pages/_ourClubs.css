@@ -29,9 +29,16 @@
 .map-container {
     width: 1400px;
     margin: 0 auto;
-  }
+}
+
+.map__subtitle {
+  text-align: right;
+  font-size: 32px;
+  font-weight: medium;
+  margin-right: 60px;
+}
   
-  @media (max-width: 1400px) {
+@media (max-width: 1400px) {
     .map-container {
       width: 100%;
     }
@@ -39,4 +46,53 @@
       width: 100%;
       height: auto;
     }
+}
+
+@media (max-width: 1200px) {
+  .h1__ouc {
+    font-size: 40px;
   }
+  .subtitle__games__five {
+    max-width: 750px;
+    font-size: 16px;
+  }
+  .h2__ouc {
+    font-size: 40px;
+  }
+  .map__subtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 910px) {
+  .h1__ouc {
+    font-size: 36px;
+  }
+  .subtitle__games__five {
+    max-width: 600px;
+    font-size: 12px;
+  }
+  .h2__ouc {
+    font-size: 36px;
+  }
+  .map__subtitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 470px) {
+  .h1__ouc {
+    font-size: 32px;
+  }
+  .subtitle__games__five {
+    max-width: 600px;
+    font-size: 10px;
+  }
+  .h2__ouc {
+    font-size: 30px;
+  }
+  .map__subtitle {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+}

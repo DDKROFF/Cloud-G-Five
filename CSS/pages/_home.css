@@ -158,9 +158,6 @@
     .advantages__card {
         font-size: 16px;
     }
-    .share__list {
-        gap: 40px;
-    }
     .share__card {
         font-size: 30px;
         max-width: 272px;
@@ -227,6 +224,17 @@
     .advantages__card {
         font-size: 10px;
         max-width: 238px;
+    }
+    .share__list {
+        gap: 25px;
+    }
+    .share__card {
+        font-size: 22px;
+        max-width: 147px;
+    }
+    .p_share {
+        font-size: 9px;
+        line-height: 150%;
     }
 }
 

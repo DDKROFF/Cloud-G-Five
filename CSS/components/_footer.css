@@ -39,3 +39,31 @@
 .contact__us {
     font-size: 16px;
 }
+
+@media (max-width: 1440px) {
+    .footer {font-size: 24px;}
+    .report {font-size: 36px;}
+    .footer__dev {font-size: 28px;}
+    .contacts {gap: 18px;}
+}
+
+@media (max-width: 1024px) {
+    .footer {padding: 18px;}
+    .report {font-size: 32px; margin-top: 60px; align-items: center;}
+    .footer__dev {font-size: 28px; margin-top: auto;}
+    .footer__rate {font-size: 14px;}
+    .contacts {font-size: 20px; gap: 12px;}
+    .contact__us {font-size: 14px;}
+}
+@media (max-width: 910px) {
+    .footer {padding: 18px;}
+    .report {font-size: 26px; margin-top: 40px;}
+    .footer__dev {font-size: 20px; margin-top: auto;}
+    .footer__rate {font-size: 12px;}
+    .contacts {font-size: 16px; gap: 12px; margin-top: auto;}
+    .contact__us {font-size: 12px;}
+}
+@media (max-width: 550px) {
+    .footer__dev {display: none;}
+    .footer__rate {display: none;}
+}

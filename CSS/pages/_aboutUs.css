@@ -134,7 +134,12 @@
     border-radius: 10px;
 }
 
-.send__btn {
+.send__btn1 {
+    margin: 45px 0 0 0;
+}
+
+.send__btn2 {
+    display: none;
     margin: 45px 0 0 0;
 }
 
@@ -166,4 +171,74 @@
 .input__area:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 1440px) {
+    .video__banner {
+        display: flex;
+        max-width: 1200px;
+        margin: 30px auto;
+    }
+    .h__desc {
+        font-size: 44px;
+    }
+    .description__text {
+        font-size: 16px;
+        line-height: 164%;
+        max-width: 1040px;
+    }
+    .feedback__comment {
+        max-width: 890px;
+        margin: 40px auto 0;
+    }
+    .input__for__rating {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .description__text {
+        font-size: 14px;
+        line-height: 153%;
+        max-width: 910px;
+    }
+    .h__desc {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .description__text {
+        font-size: 12px;
+        max-width: 664px;
+        padding: 0 50px;
+    }
+    .input__area {
+        width: max-content;
+    }
+}
+
+@media (max-width: 910px) {
+    .head__text {font-size: 17px; padding:20px 10px 0;}
+    .input-label-с {font-size: 17px;}
+}
+
+@media (max-width: 550px) {
+    .head__text {font-size: 15px;}
+    .input-label-с {font-size: 13px; text-align: center; margin: 0px auto 10px 0px;}
+    .description__text {font-size: 9px;}
+    .h__desc {font-size: 38px}
+    .input__area {max-width: 340px;}
+
+}
+
+@media (max-width: 490px) {
+    .comment {max-width: 340px;}
+    .rating { margin: 0 auto 30px auto;}
+    .star {font-size: 30px;}
+}
+
+@media (max-width: 375px) {
+    .input__area {max-width: 225px;}
 }
