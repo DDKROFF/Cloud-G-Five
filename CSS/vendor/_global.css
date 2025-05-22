@@ -73,9 +73,48 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
   }
+  
+@media (max-width: 1200px) {
+    .h2 {
+        font-size: 36px;
+    }
+}
 
 @media (max-width: 1024px) {
     .six {
         margin-top: 40px;
+    }
+    .indent {
+        margin-bottom: 180px; 
+    }
+}
+
+@media (max-width: 700px) {
+    .h2 {
+        font-size: 34px;
+    }
+    .indent {
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 550px) {
+    .h2 {
+        font-size: 30px;
+    }
+    .indent {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 430px) {
+    .h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 343px) {
+    .h2 {
+        font-size: 26px;
     }
 }

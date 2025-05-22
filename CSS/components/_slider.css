@@ -68,3 +68,12 @@
     flex: 0 0 75%;
   }
 }
+
+@media (max-width: 750px) {
+  .slider__container {
+    padding: 0 20px;
+  }
+  .slider__container::before {
+    box-shadow: inset 32px 0 20px -10px #0A0A10, inset -32px 0 20px -10px #0A0A10;
+  }
+}

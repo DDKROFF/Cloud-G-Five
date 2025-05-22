@@ -87,11 +87,9 @@
     .btn__icon {
         padding: 2px 0;
     }
-}
-
-@media (max-width: 850px) {
-    .login {
-        font-size: 18px;
+    #to__header {
+        width: 100%;
+        left: 91%;
     }
 }
 
@@ -104,10 +102,32 @@
     .btn__icon {
         padding: 4px 0;
     }
-}
-
-@media (max-width: 850px) {
     .nav__link {
         font-size: 12px;
+    }
+    #to__header {
+        width: 8%;
+        left: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    #to__header {
+        width: 9%;
+        left: 88%;
+    }
+}
+
+@media (max-width: 475px) {
+    #to__header {
+        width: 12%;
+        left: 84%;
+    }
+}
+
+@media (max-width: 475px) {
+    #to__header {
+        width: 14%;
+        left: 82%;
     }
 }

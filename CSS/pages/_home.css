@@ -2,25 +2,24 @@
     display: flex;
     max-width: 1070px;
     margin: 0 auto;
+    font-weight: 700;
 }
 
 .logo3D {
     background-color: gray;
-    width: 515px;
-    height: 290px;
+    max-width: 515px;
+    max-height: 290px;
     margin-right: 50px;
 }
 
 .face__h {
     text-align: center;
     font-size: 48px;
-    font-weight: bold;
     margin-bottom: 40px;
 }
 
 .face__text {
     line-height: 45px;
-    font-weight: 700;
 }
 
 
@@ -112,8 +111,205 @@
     .games__list {
         justify-content: center;
     }
+    .list__h {
+        font-size: 30px;
+    }
+    .advantages__card {
+        font-size: 18px;
+    }
+    .game {
+        width: 32%;
+    }
+    .share__list {
+        gap: 40px;
+        justify-content: center;
+    }
+    .share__card {
+        font-size: 36px;
+        max-width: 338px;
+    }
+    .p_share {
+        font-size: 24px;
+        line-height: 180%;
+    }
 }
 
 @media (max-width: 1200px) {
-    
+    .face__h {
+        font-size: 44px;
+    }
+    .face__text {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .logo3D {
+        width: 47%;
+    }
+    .how__work {
+        font-size: 16px;
+        padding: 0 40px;
+    }
+    .advantages__icon {
+        max-height: 130px;
+    }
+    .list__h {
+        font-size: 28px;
+    }
+    .advantages__card {
+        font-size: 16px;
+    }
+    .share__list {
+        gap: 40px;
+    }
+    .share__card {
+        font-size: 30px;
+        max-width: 272px;
+    }
+    .p_share {
+        font-size: 20px;
+        line-height: 170%;
+    }
+}
+
+@media (max-width: 910px) {
+    .face {
+        flex-direction: column;
+        max-width: 600px;
+        text-align: center;
+    }
+    .logo3D {
+        width: 100%;
+        margin: 0 auto 0 auto ;
+    }
+    .face__h {
+        margin-top: 40px;
+    }
+    .advantages__icon {
+        max-height: 120px;
+    }
+    .list__h {
+        font-size: 26px;
+    }
+    .advantages__card {
+        font-size: 14px;
+    }
+    .advantages__list {
+        gap: 35px 20px;
+    }
+}
+
+@media (max-width: 870px) {
+    .advantages__icon {
+        max-height: 110px;
+    }
+    .list__h {
+        font-size: 24px;
+    }
+    .advantages__card {
+        font-size: 12px;
+        max-width: 306px;
+    }
+    .advantages__list {
+        gap: 20px 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .how__work {
+        font-size: 14px;
+    }
+    .advantages__icon {
+        max-height: 100px;
+    }
+    .list__h {
+        font-size: 20px;
+    }
+    .advantages__card {
+        font-size: 10px;
+        max-width: 238px;
+    }
+}
+
+@media (max-width: 550px) {
+    .face {
+        padding: 0 20px;
+    } 
+    .face__h {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+    .face__text {
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .advantages__icon {
+        max-height: 90px;
+    }
+    .list__h {
+        font-size: 16px;
+    }
+    .advantages__card {
+        font-size: 9px;
+        max-width: 190px;
+    }
+    .games__list {
+        gap: 5px;
+    }
+    .game {
+        width: 31%;
+    }
+}
+
+@media (max-width: 425px) {
+    .how__work {
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    .ul__howWork {
+        gap: 28px;
+    }
+    .face__h {
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+    .face__text {
+        line-height: 30px;
+    }
+
+    .advantages__icon {
+        max-height: 70px;
+    }
+    .list__h {
+        font-size: 12px;
+    }
+    .advantages__card {
+        font-size: 6px;
+        max-width: 143px;
+    }
+}
+
+@media (max-width: 375px) {
+    .how__work {
+        font-size: 10px;
+        padding: 0 15px;
+    }
+    .ul__howWork {
+        gap: 20px;
+    }
+    .face__h {
+        font-size: 32px;
+    }
+    .face__text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .advantages__icon {
+        max-height: 50px;
+    }
+    .list__h {
+        font-size: 10px;
+    }
+    .advantages__card {
+        max-width: 121px;
+    }
 }

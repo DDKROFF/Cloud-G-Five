@@ -190,18 +190,227 @@
     font-size: 40px;
 }
 
-#tarrif__text1:hover{
+#tarrif__text1:hover {
     -webkit-text-stroke: 0.5px #61803C;
 }
 
-#tarrif__text2:hover{
+#tarrif__text2:hover {
     -webkit-text-stroke: 0.5px #7B0082;
 }
 
-#tarrif__text3:hover{
+#tarrif__text3:hover {
     -webkit-text-stroke: 0.5px #8E752E;
 }
 
-#tarrif__text4:hover{
+#tarrif__text4:hover {
     -webkit-text-stroke: 0.5px #366EE7;
+}
+
+@media (max-width: 1496px) {
+    .tariff__list {
+        gap: 30px;
+        justify-content: center;
+    }
+    .tariff__card {
+        width: 264px;
+        height: 428px;
+        border-radius: 55px;
+    }
+    .background__card {
+        top: 4px;
+        right: -4px;
+        border-radius: 52px;
+        width: 256px;
+        height: 420px;
+    }
+    .background__text {
+        bottom: 146px;
+        left: -24%;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 120%;
+        letter-spacing: 0.25em;
+    }
+    #card__one:before {
+        width: 264px;
+        height: 428px;
+        border-radius: 55px;
+    }
+    #card__two:before {
+        width: 264px;
+        height: 428px;
+        border-radius: 55px;
+    }
+    #card__three:before {
+        width: 264px;
+        height: 428px;
+        border-radius: 55px;
+    }
+    #card__four:before {
+        width: 264px;
+        height: 428px;
+        border-radius: 55px;
+    }
+    .tarrif__content {
+        left: 4px;
+        bottom: 416px;
+        max-width: 256px;
+        height: 428px;
+    }
+    .tariff__title {
+        margin: 12px auto 0 24px;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .play__time {
+        margin-top: 23px;
+        font-size: 16px;
+    }
+    .play__hours {
+        font-size: 42px;
+    }
+    .tariff__subtitle {
+        max-width: 173px;
+        font-size: 13px;
+        margin: 50px auto 0 auto;
+    }
+    .play__price {
+        margin: auto auto 27px 19px;
+        font-size: 31px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tariff__list {
+        gap: 20px;
+    }
+    .tariff__card {
+        width: 224px;
+        height: 364px;
+        border-radius: 46px;
+    }
+    .background__card {
+        top: 4px;
+        right: -5px;
+        border-radius: 42px;
+        width: 214px;
+        height: 356px;
+    }
+    #card__one:before {
+        width: 224px;
+        height: 364px;
+        border-radius: 46px;
+    }
+    #card__two:before {
+        width: 224px;
+        height: 364px;
+        border-radius: 46px;
+    }
+    #card__three:before {
+        width: 224px;
+        height: 364px;
+        border-radius: 46px;
+    }
+    #card__four:before {
+        width: 224px;
+        height: 364px;
+        border-radius: 46px;
+    }
+    .tarrif__content {
+        left: 3px;
+        bottom: 352px;
+        max-width: 216px;
+        height: 355px;
+    }
+    .tariff__title {
+        margin: 12px auto 0 24px;
+        font-size: 24px;
+    }
+    .play__time {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    .play__hours {
+        font-size: 40px;
+    }
+    .tariff__subtitle {
+        max-width: 173px;
+        font-size: 11px;
+        margin: 50px auto 0 auto;
+    }
+    .play__price {
+        margin: auto auto 19px 13px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 550px) {
+    .tariff__list {
+        gap: 20px;
+    }
+    .tariff__card {
+        width: 134px;
+        height: 218px;
+        border-radius: 24px;
+    }
+    .background__card {
+        top: 4px;
+        right: -4px;
+        border-radius: 20px;
+        width: 126px;
+        height: 210px;
+    }
+    .background__text {
+        bottom: 103px;
+        left: -46%;
+        font-size: 46px;
+        line-height: 114%;
+        letter-spacing: 0.1em;
+    }
+    #card__one:before {
+        width: 134px;
+        height: 218px;
+        border-radius: 24px;
+    }
+    #card__two:before {
+        width: 134px;
+        height: 218px;
+        border-radius: 24px;
+    }
+    #card__three:before {
+        width: 134px;
+        height: 218px;
+        border-radius: 24px;
+    }
+    #card__four:before {
+        width: 134px;
+        height: 218px;
+        border-radius: 24px;
+    }
+    .tarrif__content {
+        left: 3px;
+        bottom: 206px;
+        max-width: 127px;
+        height: 209px;
+    }
+    .tariff__title {
+        margin: 3px auto 0 11px;
+        font-size: 14px;
+    }
+    .play__time {
+        margin-top: 20px;
+        font-size: 8px;
+    }
+    .play__hours {
+        font-size: 26px;
+    }
+    .tariff__subtitle {
+        max-width: 78px;
+        font-size: 6px;
+        margin: 21px auto 0 auto;
+    }
+    .play__price {
+        margin: auto auto 6px 10px;
+        font-size: 16px;
+    }
 }
